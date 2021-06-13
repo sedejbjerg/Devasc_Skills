@@ -1,0 +1,60 @@
+---
+- name: Gather information about my router
+  hosts: CSR1kv
+  gather_facts: false
+  connection: local
+
+  tasks:
+   - name: Run show version
+     ios_command:
+       commands:
+       - show version
+     register: sh_ver
+
+   - name: Run show interfaces
+     ios_command:
+       commands:
+       - show interfaces
+     register: sh_int
+
+   - name: Run clear counters GigabitEthernet1
+     ios_command:
+       commands:
+         - command: 'clear counters GigabitEthernet1'
+           prompt: '[confirm]'
+           answer: 'y'
+     register: cl_coun
+
+   - name: Run show ip route
+     ios_command:
+       commands:
+       - show ip route
+     register: sh_ip_rou
+
+   - name: Run multiple commands on remote nodes
+     ios_command:
+       commands:
+       - show version
+       - show interfaces
+     register: sh_ver_int
+
+   - name: Save output to a .txt file in ./output
+     copy:
+       content: "{{ sh_ver.stdout[0] }}"
+       dest: "./output/show_version_{{ inventory_hostname }}.txt"
+
+   - name: Save output to a .txt file in ./output
+     copy:
+       content: "{{ sh_int.stdout[0] }}"
+       dest: "./output/show_interfaces_{{ inventory_hostname }}.txt"
+
+   - name: Save output to a .txt file in ./output
+     copy:
+       content: "{{ cl_coun.stdout[0] }}"
+       dest: "./output/clear_counters_g1_{{ inventory_hostname }}.txt"
+
+   - name: Save output to a .txt file in ./output
+     copy:
+       content: "{{ sh_ip_rou.stdout[0] }}"
+       dest: "./output/show_ip_route_{{ inventory_hostname }}.txt"
+
