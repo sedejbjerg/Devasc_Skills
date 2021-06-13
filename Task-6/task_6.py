@@ -1,12 +1,9 @@
-# ZTY0YTRiOWItNzk4MS00YmE2LWE5MDMtN2U1ZGJjMTU2OWFkMTgxM2JlZDYtYTc4_P0A1_5d96674f-de50-43d7-ae6b-8071b71cb457
-
-
 import requests
 import json
 import os
 from requests_toolbelt.multipart.encoder import MultipartEncoder
 
-access_token = 'ZTY0YTRiOWItNzk4MS00YmE2LWE5MDMtN2U1ZGJjMTU2OWFkMTgxM2JlZDYtYTc4_P0A1_5d96674f-de50-43d7-ae6b-8071b71cb457'
+access_token = '*** hidden ***'
 
 def authentication():
     url = 'https://webexapis.com/v1/people/me'
