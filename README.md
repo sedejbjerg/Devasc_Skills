@@ -147,19 +147,54 @@ solved after consulting the ansible documentation.
 ### Preparation:
 - DEVASC-VM
 - Looked at Chapter 8 Lab
+- Consulted https://realpython.com/working-with-files-in-python/#listing-all-files-in-a-directory and https://developer.webex.com/docs/api/basics for examples on file handling and upload to webex.
 
 ### Implementation, major steps:
-- 
+- Retrieved a token from https://developer.webex.com/
+- Collected some of the individual python scripts from the Chapter 8 Webex Lab, and put them together in a single script  
+- Added support for file upload
+- Most of the testing was done one step at a time, so I did't have to delete the webex teams room every time
 
 ### Troubleshooting:
 - Errors:
-  - 
+  - All of the errors were minor syntax errors
 - Fix:
-  - 
+  - Fixed the syntax errors
   
 ### Verification:
 
+- Screenshots, and the task_6.py script are located in ./Task-6
+- The uploaded screenshots are located in ./Task-6/screenshots
 
 ----------------
+
+## Task-7 -- BASH
+
+### Preparation:
+- DEVASC-VM
+- Info and code snippets from classes with Yvan Rooseleer
+
+### Implementation, major steps:
+- Downloaded the files to the correct folders
+- Changed the code snippets so they did the right job
+
+### Troubleshooting:
+- Errors:
+  - The was an error with the IOS_VERSION, turned out to be a carriage return (cr) at the end of each line in the running-config file, causing problems comparing with REQUIRED_IOS
+  - HOSTNAME is having the same error, but that is insignifcant
+- Fix:
+  - Found a way to strip the cr with sed https://stackoverflow.com/questions/15520339/how-to-remove-carriage-return-from-a-variable-in-shell-script
+  
+### Verification:
+- The file check_ios.rep are located in ./Task-7
+- Screenshot, and the check_ios.sh script are located in ./Task-7
+
+----------------
+
+
+
+
+
+
 
 dd647b1d0b0d4ff08419b1c3915efbd0
