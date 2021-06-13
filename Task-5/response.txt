@@ -1,0 +1,69 @@
+
+
+-1- OPTIONS
+
+200
+Server : nginx
+Date : Sun, 13 Jun 2021 11:08:55 GMT
+Content-Type : text/html
+Content-Length : 0
+Connection : keep-alive
+Allow : DELETE, GET, HEAD, PATCH, POST, PUT, OPTIONS
+Cache-Control : private, no-cache, must-revalidate, proxy-revalidate
+Accept-Patch : application/yang-data+xml, application/yang-data+json
+Pragma : no-cache
+
+
+-2- POST
+
+201
+Server : nginx
+Date : Sun, 13 Jun 2021 11:08:55 GMT
+Content-Type : text/html
+Content-Length : 0
+Location : https://192.168.20.38/restconf/data/Cisco-IOS-XE-native:native/logging/monitor/severity
+Connection : keep-alive
+Last-Modified : Sun, 13 Jun 2021 11:08:55 GMT
+Cache-Control : private, no-cache, must-revalidate, proxy-revalidate
+Etag : 1623-559961-285415
+Pragma : no-cache
+
+
+-3- PUT
+
+204
+Server : nginx
+Date : Sun, 13 Jun 2021 11:08:55 GMT
+Content-Type : text/html
+Content-Length : 0
+Connection : keep-alive
+Last-Modified : Sun, 13 Jun 2021 11:08:55 GMT
+Cache-Control : private, no-cache, must-revalidate, proxy-revalidate
+Etag : 1623-559961-573756
+Pragma : no-cache
+
+
+-4- PATCH
+
+204
+Server : nginx
+Date : Sun, 13 Jun 2021 11:08:55 GMT
+Content-Type : text/html
+Content-Length : 0
+Connection : keep-alive
+Last-Modified : Sun, 13 Jun 2021 11:08:55 GMT
+Cache-Control : private, no-cache, must-revalidate, proxy-revalidate
+Etag : 1623-559961-847552
+Pragma : no-cache
+
+
+-5- OPTIONS
+
+200
+Server : nginx
+Date : Sun, 13 Jun 2021 11:08:55 GMT
+Content-Type : application/yang-data+json
+Transfer-Encoding : chunked
+Connection : keep-alive
+Cache-Control : private, no-cache, must-revalidate, proxy-revalidate
+Pragma : no-cache
