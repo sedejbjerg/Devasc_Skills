@@ -117,24 +117,49 @@ solved after consulting the ansible documentation.
 
 --------
 
-## Task-5 --
+## Task-5 -- REST API & RESTCONF
 
 ### Preparation:
-- DEVASC-VM and github
-- Consulted Chapter 6
+- DEVASC-VM and CSR1000v-VM
+- Looked at Chapter 8 Lab
 
 ### Implementation, major steps:
-- Started / running the Jenkins Container
-- Configured a job in Jenkins
-- Build
-- Looked at Console Output and tested access to localhost:8081
+- Wrote a sample python script for the OPTIONS curl command, and fixed some minor errors
+- Copied the sample to the other curl commands, and made the necessary changes
+- Tested
+- Added a prettier output/ response 
 
 ### Troubleshooting:
-- No errors
-
+- Errors:
+  - Some few syntax errors
+  - Wanted a pretty output/ response
+- Fix:
+  - Fixed the syntax errors
+  - Had an idea for a pretty output/ response, and found some help on https://www.kite.com/python/answers/how-to-iterate-through-a-json-string-in-python
+  
 ### Verification:
-- Different screenshots are located in ./Task-4
+- Screenshot, response.txt and the task_5.py script are located in ./Task-5
 
 --------
+
+## Task-6 -- Webex Teams API
+
+### Preparation:
+- DEVASC-VM
+- Looked at Chapter 8 Lab
+
+### Implementation, major steps:
+- 
+
+### Troubleshooting:
+- Errors:
+  - 
+- Fix:
+  - 
+  
+### Verification:
+
+
+----------------
 
 dd647b1d0b0d4ff08419b1c3915efbd0
