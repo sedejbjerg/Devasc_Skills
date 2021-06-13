@@ -35,11 +35,11 @@ see the ansible.cfg and hosts file.
 - clear counters g1
 - show ip route (an extra one I added)
 - show version and show interfaces
-- the first 4 of them of them with a task to send output to different files
+- the first 4 of them with a task to send output to different files
 - Run the ansible playbook file: ansible-playbook ios_status.yaml
 
 ### Troubleshooting:
-- No problems, except a minor syntax error in the clear conunter task,
+- No problems, except a minor syntax error in the clear counter task,
 solved after consulting the ansible documentation.
 
 ### Verification:
@@ -53,7 +53,7 @@ solved after consulting the ansible documentation.
 
 ### Preparation:
 - Access to DEVASC-VM
-- Looked at Chapter 6 and googled the internet:
+- Looked at Chapter 6 and googled:
  - https://medium.com/@vi1996ash/steps-to-build-apache-web-server-docker-image-1a2f21504a8e
  - https://www.tutorialspoint.com/docker/building_web_server_docker_file.htm
 
@@ -86,14 +86,14 @@ solved after consulting the ansible documentation.
    - https://stackoverflow.com/questions/44331836/apt-get-install-tzdata-noninteractive
    - https://www.thegeekstuff.com/2010/09/change-timezone-in-linux/
 - Error: 
-  - Line 10 dont seem to change 000-default.conf
+  - Line 10 doesn't seem to change 000-default.conf
 - Fix:
   - Line 9 ports.conf override this
 
 ### Verification:
 - Dockerfile, shell script and index.html are located in the folder ./Task-3
 - Screenshots indicating success are located in the folder ./Task-3
-- The file docker.txt generated from running the apache_docker.sh script are located in the folder ./Task-3
+- The file docker.txt generated from running the apache_docker.sh script is located in the folder ./Task-3
 
 --------
 
@@ -180,21 +180,14 @@ solved after consulting the ansible documentation.
 
 ### Troubleshooting:
 - Errors:
-  - The was an error with the IOS_VERSION, turned out to be a carriage return (cr) at the end of each line in the running-config file, causing problems comparing with REQUIRED_IOS
-  - HOSTNAME is having the same error, but that is insignifcant
+  - There was an error with the IOS_VERSION, turned out to be a carriage return (cr) at the end of each line in the running-config file, causing problems comparing with REQUIRED_IOS
+  - HOSTNAME has the same error, but this is insignifcant
 - Fix:
   - Found a way to strip the cr with sed https://stackoverflow.com/questions/15520339/how-to-remove-carriage-return-from-a-variable-in-shell-script
   
 ### Verification:
-- The file check_ios.rep are located in ./Task-7
+- The file check_ios.rep is located in ./Task-7
 - Screenshot, and the check_ios.sh script are located in ./Task-7
 
 ----------------
 
-
-
-
-
-
-
-dd647b1d0b0d4ff08419b1c3915efbd0

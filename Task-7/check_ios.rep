@@ -1,0 +1,13 @@
+
+2021-06-13
+
+STARTING IOS CHECK
+Device hostname: CSR101
+IOS version: 16.9.101
+Upgrade ios to version: 16.9.111
+
+Device hostname: CSR111
+IOS version: 16.9.111
+Upgrade not necessary
+
+ENDING IOS CHECK
